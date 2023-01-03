@@ -21,7 +21,7 @@ function addLinhas() {
 
     let linha = "<tr>";
     linha += `<td>${inputNome.value}</td>`;
-    linha += `<td>${inputNumero.value}</td>`;
+    linha += `<td><a href="tel:${inputNumero.value}">${inputNumero.value}</a></td>`;
     linha += `</tr>`;
 
     linhas += linha;

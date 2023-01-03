@@ -5,6 +5,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.877);
+}
+
 body {
   background-color: #383838;
 }
@@ -13,9 +18,8 @@ body {
   max-width: 960px;
   background-color: #383838;
   margin: 0 auto;
+  padding: 10px;
 }
-
-
 
 header h1 {
   max-width: 400px;
@@ -27,7 +31,6 @@ header h1 {
 }
 
 form {
-
   margin-bottom: 30px;
 }
 
