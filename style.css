@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #383838;
+}
+
+.container {
+  max-width: 960px;
+  background-color: #383838;
+  margin: 0 auto;
+}
+
+
+
+header h1 {
+  max-width: 400px;
+  margin-top: 30px;
+  padding-left: 10px;
+  color: rgba(255, 255, 255, 0.637);
+  border-left: 4px solid #00a97f;
+  margin-bottom: 80px;
+}
+
+form {
+
+  margin-bottom: 30px;
+}
+
+form input {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  height: 40px;
+  background-color: #383838;
+  border-bottom: 2px solid #00a97f;
+  margin: 0px 10px 0px 0px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+input[type="text"] {
+  outline: none;
+}
+
+input[type="number"] {
+  outline: none;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+}
+
+thead tr th {
+  padding: 10px 0px;
+  border-top: 2px solid #00a97f;
+  color: rgba(255, 255, 255, 0.826);
+  text-transform: uppercase;
+}
+
+tbody tr td {
+  padding: 10px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.284);
+  color: rgba(255, 255, 255, 0.877);
+}
+
+tfoot tr td {
+  padding: 8px;
+  border-top: 2px solid #00a97f;
+  color: rgba(255, 255, 255, 0.226);
+}
+
+.btn {
+  --color: #00a97f;
+  --color2: rgb(10, 25, 30);
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
